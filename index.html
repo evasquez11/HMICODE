@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HMI Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="engine" id="engine1">
+        <div class="header">
+            <h2>Engine 01</h2>
+            <div class="power">9999 kW</div>
+        </div>
+        <div class="status">
+            <div class="status-bar" style="height: 70%;">Status 01</div>
+            <!-- More status bars -->
+        </div>
+        <div class="controls">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <!-- More switches -->
+        </div>
+        <div class="input-value">
+            <input type="text" value="9999 kW">
+        </div>
+        <!-- Repeat for other engines -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -4,29 +4,107 @@
     <meta charset="UTF-8">
     <title>HMI Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <script src ="script.js"></script>
 </head>
 <body>
-    <div class="engine" id="engine1">
-        <div class="header">
-            <h2>Engine 01</h2>
-            <div class="power">9999 kW</div>
+    <div class="container">
+        <div class="engine" id="engine1">
+            <div class="header">
+                <h2>Engine 01</h2>
+                <div class="power">9999 kW</div>
+            </div>
+            <div class="status">
+                <div class="status-bar" style="height: 70%;">Status 01</div>
+            </div>
+            <div class="controls">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="input-value">
+                <input type="text" value="9999 kW">
+            </div>
         </div>
-        <div class="status">
-            <div class="status-bar" style="height: 70%;">Status 01</div>
-            <!-- More status bars -->
+        <!-- Repeat the structure below for engines 2 through 5 -->
+        <div class="engine" id="engine2">
+            <div class="header">
+                <h2>Engine 02</h2>
+                <div class="power">9999 kW</div>
+            </div>
+            <div class="status">
+                <div class="status-bar" style="height: 50%;">Status 02</div>
+            </div>
+            <div class="controls">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="input-value">
+                <input type="text" value="9999 kW">
+            </div>
         </div>
-        <div class="controls">
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider"></span>
-            </label>
-            <!-- More switches -->
+        <div class="engine" id="engine3">
+            <div class="header">
+                <h2>Engine 03</h2>
+                <div class="power">9999 kW</div>
+            </div>
+            <div class="status">
+                <div class="status-bar" style="height: 30%;">Status 03</div>
+            </div>
+            <div class="controls">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="input-value">
+                <input type="text" value="9999 kW">
+            </div>
         </div>
-        <div class="input-value">
-            <input type="text" value="9999 kW">
+        <div class="engine" id="engine4">
+            <div class="header">
+                <h2>Engine 04</h2>
+                <div class="power">9999 kW</div>
+            </div>
+            <div class="status">
+                <div class="status-bar" style="height: 80%;">Status 04</div>
+            </div>
+            <div class="controls">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="input-value">
+                <input type="text" value="9999 kW">
+            </div>
         </div>
-        <!-- Repeat for other engines -->
+        <div class="engine" id="engine5">
+            <div class="header">
+                <h2>Engine 05</h2>
+                <div class="power">9999 kW</div>
+            </div>
+            <div class="status">
+                <div class="status-bar" style="height: 60%;">Status 05</div>
+            </div>
+            <div class="controls">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="input-value">
+                <input type="text" value="9999 kW">
+            </div>
+        </div>
     </div>
+    
+    
+
+
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -11,6 +11,16 @@ body {
     padding: 10px;
 }
 
+/* Style for the status message text */
+.status-message {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #333; /* Adjust background color as needed */
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.9em; /* Adjust font size as needed */
+}
 
 .sensor {
     margin: 10px;

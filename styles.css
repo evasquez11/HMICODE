@@ -53,58 +53,44 @@ body {
     background-color: #ff4136; /* Active alarm color */
 }
 
-.message-list {
-    list-style-type: none; /* Removes bullet points */
+.message-list-sensor1,
+.message-list-sensor2,
+.message-list-sensor3,
+.message-list-sensor4,
+.message-list-sensor5 {
+    list-style-type: none; /* Removes default list bullets */
     margin: 0;
-    padding: 0;
-    display: none; /* Hide by default */
+    padding: 10px; /* Adjust padding as necessary */
+    display: none; /* Hidden by default */
     background-color: #444; /* Background color for the list */
     color: white;
     border-radius: 5px;
-    padding: 10px;
     font-size: 0.8em;
-    /* additional styling as needed */
 }
 
-.message-list-sensor2 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: none; /* Hidden by default */
-    background-color: #444;
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 0.8em;
-    /* Additional styling as needed */
+.message-list-sensor1 li,
+.message-list-sensor2 li,
+.message-list-sensor3 li,
+.message-list-sensor4 li,
+.message-list-sensor5 li {
+    margin-bottom: 5px; /* Adds space between list items */
+    padding: 5px 0; /* Adds padding to top and bottom of list items */
 }
 
-.message-list-sensor3 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: none; /* Hidden by default */
-    background-color: #444;
-    color: white;
+.timer {
+    font-family: 'Digital', sans-serif; /* Use a digital-looking font if available */
+    background-color: #000;
+    color: #0F0; /* Classic green digital timer color */
+    text-align: center;
+    font-size: 1.5em; /* Adjust size as needed */
+    padding: 5px;
+    margin-top: 10px;
     border-radius: 5px;
-    padding: 10px;
-    font-size: 0.8em;
-    /* Additional styling as needed */
+    width: 100px; /* Set a fixed width to keep the timer from changing size */
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.message-list-sensor4,
-.message-list-sensor5 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: none; /* Hidden by default */
-    background-color: #444;
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 0.8em;
-    /* Additional styling as needed */
-}
 
 .status-indicator {
     padding: 5px;

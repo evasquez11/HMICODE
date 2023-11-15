@@ -10,7 +10,7 @@
     <div class="container">
         <div class="sensor" id="sensor1">
             <div class="header">
-                <h2>Sensor 01</h2>
+                <h2>Line Sensor 01</h2>
                 <div class="power">9999 kW</div>
             </div>
             <div class="status-message">No Package Detected - Sensor Idle</div>
@@ -21,16 +21,15 @@
                 <div class="status-indicator alarm">Alarm</div>
             </div>
             <div class="controls">
-                <label class="switch">
-                    <input type="checkbox">
+                <label class="switch" title="Toggle status key">
+                    <input type="checkbox" id="toggleMessageListSensor1">
                     <span class="slider round"></span>
                 </label>
-                <!-- Repeat switches if needed -->
             </div>
             <div class="input-value">
                 <input type="text" value="9999 kW">
             </div>
-            <ul class="message-list">
+            <ul class="message-list-sensor1">
                 <li>No Package Detected - Sensor Idle</li>
                 <li>Awaiting Package Arrival</li>
                 <li>Package Detected</li>
@@ -40,7 +39,7 @@
         <!-- Repeat the structure below for sensors 2 through 5 -->
         <div class="sensor" id="sensor2">
             <div class="header">
-                <h2>Sensor 02</h2>
+                <h2>Line Sensor 02</h2>
                 <div class="power">9999 kW</div>
             </div>
             <div class="status-message">Actuator Inactive - Ready for Engagement</div>
@@ -51,8 +50,8 @@
                 <div class="status-indicator alarm">Alarm</div>
             </div>
             <div class="controls">
-                <label class="switch">
-                    <input type="checkbox">
+                <label class="switch" title="Toggle status key">
+                    <input type="checkbox" id="toggleMessageListSensor2">
                     <span class="slider round"></span>
                 </label>
             </div>
@@ -67,7 +66,7 @@
         </div>
         <div class="sensor" id="sensor3">
             <div class="header">
-                <h2>Sensor 03</h2>
+                <h2>Distance Sensor 01</h2>
                 <div class="power">9999 kW</div>
             </div>
             <div class="status">
@@ -77,8 +76,8 @@
                 <div class="status-indicator alarm">Alarm</div>
             </div>
             <div class="controls">
-                <label class="switch">
-                    <input type="checkbox">
+                <label class="switch" title="Toggle status key">
+                    <input type="checkbox" id="toggleMessageListSensor3">
                     <span class="slider round"></span>
                 </label>
             </div>
@@ -95,8 +94,9 @@
         </div>
         <div class="sensor" id="sensor4">
             <div class="header">
-                <h2>Sensor 04</h2>
+                <h2>Magnetic Sensor 01</h2>
                 <div class="power">9999 kW</div>
+                <!-- <div class="timer">00:00</div> -->
             </div>
             <div class="status">
                 <!-- <div class="status-bar" style="height: 80%;">Status 02</div> -->
@@ -107,14 +107,16 @@
                 <div class="status-indicator alarm">Alarm</div>
             </div>
             <div class="controls">
-                <label class="switch">
-                    <input type="checkbox">
+                <label class="switch" title="Toggle status key">
+                    <input type="checkbox" id="toggleMessageListSensor4">
                     <span class="slider round"></span>
                 </label>
             </div>
-            <div class="input-value">
+            <div class="timer">00:00</div>
+
+            <!-- <div class="input-value">
                 <input type="text" value="9999 kW">
-            </div>
+            </div> -->
             <ul class="message-list-sensor4">
                 <li>Status 01: Belt Alignment Normal - No Stretch Detected</li>
                 <li>Status 02: Minor Belt Stretch Detected - Monitor for Further Changes</li>
@@ -125,8 +127,9 @@
         </div>
         <div class="sensor" id="sensor5">
             <div class="header">
-                <h2>Sensor 05</h2>
+                <h2>Magnetic Sensor 02</h2>
                 <div class="power">9999 kW</div>
+                <!-- <div class="timer">00:00</div> -->
             </div>
             <div class="status">
                 <div class="status-bar" style="height: 90%;">Status 01</div>
@@ -135,14 +138,16 @@
                 <div class="status-indicator alarm">Alarm</div>
             </div>
             <div class="controls">
-                <label class="switch">
-                    <input type="checkbox">
+                <label class="switch" title="Toggle status key">
+                    <input type="checkbox" id="toggleMessageListSensor5">
                     <span class="slider round"></span>
                 </label>
             </div>
-            <div class="input-value">
+            <div class="timer">00:00</div>
+
+            <!-- <div class="input-value">
                 <input type="text" value="9999 kW">
-            </div>
+            </div> -->
             <ul class="message-list-sensor5">
                 <li>Status 01: Belt Alignment Normal - No Stretch Detected</li>
                 <li>Status 02: Minor Belt Stretch Detected - Monitor for Further Changes</li>

@@ -42,6 +42,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function startLoopingTimer(sensorId) {
+        let timer = document.querySelector(`#${sensorId} .timer`);
+        let seconds = 0;
+
+        setInterval(() => {
+            seconds = (seconds + 1) % 11; // Reset to 0 after reaching 10
+            let secondsFormatted = seconds.toString().padStart(2, '0');
+            timer.textContent = `00:${secondsFormatted}`;
+        }, 1000); // Update every second
+    }
+
+    // Call the startLoopingTimer function for sensor4 and sensor5
+    startLoopingTimer('sensor4');
+    startLoopingTimer('sensor5');
+
+    
+
     // Update status messages for sensors 1 and 2 at a different interval
     setInterval(() => {
         updateStatusMessage(document.querySelector('#sensor1'), sensor1Messages, sensor1Index);
@@ -69,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.querySelector('#sensor1 .switch input').addEventListener('change', (event) => {
-        const messageList = document.querySelector('#sensor1 .message-list');
+        const messageList = document.querySelector('#sensor1 .message-list-sensor1');
         if (event.target.checked) {
             messageList.style.display = 'block'; // Show the list
         } else {
@@ -112,6 +129,8 @@ document.addEventListener('DOMContentLoaded', () => {
             messageListSensor5.style.display = 'none'; // Hide the list
         }
     });
+
+
 
 
     

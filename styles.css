@@ -20,6 +20,37 @@ body {
     width: 200px;
 }
 
+.status-indicator {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* Existing styles for .status-bar and other elements */
+
+/* Style for the alarm indicator */
+.alarm {
+    padding: 5px;
+    margin-top: 5px;
+    background-color: #555; /* Default background color for alarm */
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+/* Style when an alarm is active */
+.alarm.active {
+    background-color: #ff4136; /* Active alarm color */
+}
+
+
+.status-indicator {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+
+
 .header h2, .header .power {
     margin: 0;
     padding: 5px;

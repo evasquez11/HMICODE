@@ -16,10 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
     let sensor1Index = 0;
     let sensor2Index = 0;
 
-    // Function to update the status message for a sensor
+    // Function to update the status message for a sensor and activate the alarm if the message matches a certain condition
     function updateStatusMessage(sensorElement, messages, index) {
         const statusDisplay = sensorElement.querySelector('.status-message');
+        const alarmIndicator = sensorElement.querySelector('.alarm');
         statusDisplay.textContent = messages[index];
+
+        // Check the message and add 'active' class to alarm if it matches the condition
+        if (messages[index] === "Package Expected But Not Detected - Check System" || 
+            messages[index] === "Error: Actuator Status Unclear") {
+            alarmIndicator.classList.add('active');
+        } else {
+            alarmIndicator.classList.remove('active');
+        }
     }
 
     // Function to simulate data change for each sensor
@@ -58,4 +67,52 @@ document.addEventListener('DOMContentLoaded', () => {
             // Here you can handle the switch toggle for each sensor
         });
     });
+
+    document.querySelector('#sensor1 .switch input').addEventListener('change', (event) => {
+        const messageList = document.querySelector('#sensor1 .message-list');
+        if (event.target.checked) {
+            messageList.style.display = 'block'; // Show the list
+        } else {
+            messageList.style.display = 'none'; // Hide the list
+        }
+    });
+
+    document.querySelector('#sensor2 .switch input').addEventListener('change', (event) => {
+        const messageListSensor2 = document.querySelector('#sensor2 .message-list-sensor2');
+        if (event.target.checked) {
+            messageListSensor2.style.display = 'block'; // Show the list
+        } else {
+            messageListSensor2.style.display = 'none'; // Hide the list
+        }
+    });
+
+    document.querySelector('#sensor3 .switch input').addEventListener('change', (event) => {
+        const messageListSensor3 = document.querySelector('#sensor3 .message-list-sensor3');
+        if (event.target.checked) {
+            messageListSensor3.style.display = 'block'; // Show the list
+        } else {
+            messageListSensor3.style.display = 'none'; // Hide the list
+        }
+    });
+
+    document.querySelector('#sensor4 .switch input').addEventListener('change', (event) => {
+        const messageListSensor4 = document.querySelector('#sensor4 .message-list-sensor4');
+        if (event.target.checked) {
+            messageListSensor4.style.display = 'block'; // Show the list
+        } else {
+            messageListSensor4.style.display = 'none'; // Hide the list
+        }
+    });
+    
+    document.querySelector('#sensor5 .switch input').addEventListener('change', (event) => {
+        const messageListSensor5 = document.querySelector('#sensor5 .message-list-sensor5');
+        if (event.target.checked) {
+            messageListSensor5.style.display = 'block'; // Show the list
+        } else {
+            messageListSensor5.style.display = 'none'; // Hide the list
+        }
+    });
+
+
+    
 });
